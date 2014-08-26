@@ -1,15 +1,15 @@
 /*
 	
 	#############################################
-				
-						  |
-						{   }
-					  <	  -   >					( Usa el código como quieras, pero NO este logotipo ) ¬¬	
-						{	}
-						  |
-						  
-				CropJC plugin for jQuery.
-			Developer by Juan Andŕes Carmena
+	
+                         |
+                       {   }
+                     <   -   >				( Usa el código como quieras, pero NO este logotipo ) ¬¬	
+                       {   }
+                         |
+								
+               CropJC plugin for jQuery.
+           Developer by Juan Andŕes Carmena
 						  
 	#############################################
 	
