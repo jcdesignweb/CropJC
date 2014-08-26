@@ -130,8 +130,6 @@ Issues: https://github.com/jcdesignweb/CropJC/issues
 		_w= (($(el).width()*100) /_Image.getWidth()); 
 		_h= (($(el).height()*100) /_Image.getHeight());
 		
-		console.log(_h);
-		
 		CropData=new coordinatesCropImage( _w, _h, _y, _x);
 		
 	};	
@@ -162,8 +160,6 @@ Issues: https://github.com/jcdesignweb/CropJC/issues
 				Cutt.append('<div class="ui-resizable-handle ui-resizable-ne" id="negrip"></div>');
 				Cutt.append('<div class="ui-resizable-handle ui-resizable-sw" id="swgrip"></div>');
 				Cutt.append('<div class="ui-resizable-handle ui-resizable-se" id="segrip"></div>');
-				
-				console.dir(settings);
 				
 				if(settings.square === true) {
 					cropw=settings.size;
@@ -272,7 +268,17 @@ Issues: https://github.com/jcdesignweb/CropJC/issues
 		init: function(options, rootElement) {
 			
 			
-			console.log($.ui.version);
+			if($.ui === undefined) {
+				
+				/**
+				 * get ui for animations
+				 */
+				$.getScript( "js/jquery-ui.js", function( data, textStatus, jqxhr ) {
+					console.log( textStatus ); // Success
+					console.log( jqxhr.status ); // 200
+					console.log( "Load was performed." );
+				});
+			}
 			
 			settings = $.extend({}, defaults, options);
 			return methods.validateParams();
