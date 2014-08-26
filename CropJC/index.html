@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.crop.js"></script>
+
+<script type="text/javascript">
+
+
+$(function() {
+	
+	var options = {
+		url: "upload.php",
+		display_crop: true,
+		cropped_path: "http://localhost/CropJC/resources/"
+	};
+	
+	$("body").CropJC(options);
+	
+});
+
+</script>
+
+</head>
+<body>
+	<form id="formFile">
+		<input type="file" value="Buscar imagen" id="inpFile" name="imagen" alt="Elige una imagen para cortar" />
+		<input type="button" value="Cortar" id="BtnCrop" />		
+	</form>
+	
+	<br />
+	<br />
+	 
+	<div>
+		<div id="Img" class="left">
+		
+		
+		</div>
+		
+		<div class="left">
+			<div id="Detail">
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+</body>
+</html>
