@@ -3,6 +3,7 @@
 .left { float:left; }
 .right { float:right; }
 
+/*
 .JcCutting { background-color: #000; opacity:.35; position:relative; cursor: all-scroll !important; }
 
 #prevImage { position: absolute; }
@@ -13,14 +14,19 @@
     height: 40px;
     overflow: hidden;
 }
+*/
 
+/*
 #nwgrip, #negrip, #swgrip, #segrip, #ngrip, #egrip, #sgrip, #wgrip {
     width: 10px;
     height: 10px;
     background-color: #ffffff;
     border: 1px solid #000000;
 }
+*/
+/*
 #segrip {
     right: -5px;
     bottom: -5px;
 }
+*/
