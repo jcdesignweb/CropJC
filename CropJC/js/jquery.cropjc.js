@@ -203,6 +203,9 @@ Issues: https://github.com/jcdesignweb/CropJC/issues
 						}
 					);
 				
+				
+				methods.setCss();
+				
 				getCuttingCoordinates($( ".JcCutting" ), imageLocated);
 				
 			}else{
@@ -280,14 +283,40 @@ Issues: https://github.com/jcdesignweb/CropJC/issues
 				});
 			}
 			
+			
 			settings = $.extend({}, defaults, options);
 			return methods.validateParams();
+		},
+		
+		setCss: function() {
+			
+			$(".JcCutting").css({
+				'background-color': '#000',
+				'border': '1px solid #000000',
+				'cursor': 'all-scroll !important',
+			    'overflow': 'hidden',
+			    'opacity': '.35',
+			    'position': 'relative'
+			});
+			
+			$("#prevImage").css({ 'position': 'absolute' });
+			
+			$("#nwgrip, #negrip, #swgrip, #segrip, #ngrip, #egrip, #sgrip, #wgrip").css({
+				'width': '10px',
+		    	'height': '10px',
+		    	'background-color': '#ffffff',
+		    	'border': '1px solid #000000'
+			});
+			
+			$("#segrip").css({ "right": "-5px",	"bottom": "-5px" });
+			
 		},
 		
 		/**
 		 *  @param IFile = Es el input file que va a tomar la imágen
 		 */
 		setImage: function(input) {
+			
 			
 			if ( input.files && input.files[0] ) {
 				
