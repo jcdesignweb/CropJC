@@ -3,7 +3,7 @@
 	
                          |
                        {   }
-                     <   -   >					( Usa el código como quieras, pero NO este logotipo ) ¬¬	
+                     <   -   >                ( Usa el código como quieras, pero NO este logotipo ) ¬¬	
                        {   }
                          |
 								
