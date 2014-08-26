@@ -11,8 +11,6 @@
            Developer by Juan Andŕes Carmena
 						  
      #############################################
-*/
-	
 	
 Version: 1.1.0
 Author: Juan Andrés Carmena <juan14nob@gmail.com>
