@@ -1,24 +1,19 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/jquery-ui.css">
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/jquery.crop.js"></script>
+<script type="text/javascript" src="js/jquery.cropjc.js"></script>
 
 <script type="text/javascript">
-
 
 $(function() {
 	
 	var options = {
 		url: "upload.php",
 		display_crop: true,
-		cropped_path: "http://localhost/CropJC/resources/"
+		cropped_path: "http://cropjc.plugin/resources/"
 	};
 	
 	$("body").CropJC(options);
@@ -50,9 +45,6 @@ $(function() {
 		</div>
 		
 	</div>
-	
-	
-	
 
 </body>
 </html>
