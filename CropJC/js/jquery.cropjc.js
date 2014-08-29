@@ -8,7 +8,7 @@
                          |
 								
                CropJC plugin for jQuery.
-           Developer by Juan Andŕes Carmena
+           Developed by Juan Andŕes Carmena
 						  
      #############################################
 	
